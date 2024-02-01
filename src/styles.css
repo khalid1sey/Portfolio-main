@@ -1,0 +1,72 @@
+
+
+html {
+    background-color: yellow;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========logo=========*/
+div.name h3 {
+    
+    font-size: 35px;
+}
+
+/* ======== nav bar=======*/
+div.navbar-container  {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+nav.navigation ul li {
+    margin-left: 10px;
+}
+
+nav.navigation ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 505;
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+/*================= main ==================*/
+
+main div.hero-content h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+/*==================== responsive for mobile ==========*/
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .name {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation ul li {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
