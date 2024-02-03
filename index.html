@@ -1,111 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Khalid - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khalid - Portfolio</title>
 
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
 </head>
 
 <body>
 
-	<header>
+  <header>
+
+    <!--===========================nav menu======================================-->
 		<div class="navbar">
-			<div class="navbar-container">
-
-			  <div class="logo">
-				<img src="images/icons8-developer.gif">
-			  </div>
-
-			  <div class="name">
-				<h3>Khalilio</h3>
-			  </div>
-
-			  <nav class="navigation">
-				<ul>
-				  <li><a href="#">Home</a></li>
-				  <li><a href="#">About</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#">Contact</a></li>
-				  <li><a href="#">Blog</a></li>
-				</ul>
+			  <nav class="navigation" id="navigation">
+                <div class="logo-wrap">
+                    <a href="#"  id="logo"><h3>Khalilio</h3></a>
+                </div>
+                
+                <div class="ham-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="ri-menu-2-fill" id="ham-menu"></i></a>
+                        <div class="nav-link">
+                        <a href="#" class="navlink"></a>
+			            <a href="#" class="navlink">Home</a>
+			            <a href="#" class="navlink">About</a>
+			            <a href="#" class="navlink">Projects</a>
+			            <a href="#" class="navlink">Contact</a>
+			            <a href="#" class="navlink">Blog</a>
+                    </div>  
+                </div>
+                   
+                
 			  </nav>
-			  
-			  <div class="hamburger-menu">
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<div class="bar"></div>
-			  </div>
-
-			  <div class="cv"><button><a href="#">CV</a></button></div>
-			</div>
 		</div>
+        <!--===========================nav menu======================================-->
 	</header>
 
-	<main>
-		<section id="hero">
-			<div class="hero-content">
-			  	<h1><code>HELLO I'm Khalid</code></h1>
-			  	<p>I am a passionate full stack developer with expertise in C, Python, JavaScript, and Bash scripting. With a strong background in web development, I strive to create innovative and user-friendly solutions. My goal is to build impactful applications that make a difference in people's lives.</p>
-			</div>
 
-			<div class="hero-img">
-				<img src="/home/kha1id/khalid/Workspace/Portfolio/hero.png" alt="img">
-			</div>
-		</section>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                  <h1><code>HELLO I'm Khalid</code></h1>
+                  <p>I am a passionate full stack developer with expertise in C, Python, JavaScript, and Bash scripting. With a strong background in web development, I strive to create innovative and user-friendly solutions. My goal is to build impactful applications that make a difference in people's lives.</p>
+            </div>
 
-		<section class="contact">
-		<div class="contact_content container">
+            <div class="hero-img">
+                <img src="/hero.png" alt="img">
+            </div>
+        </section>
 
-			<h2 class="section_title">Drop me a line</h2>
-			<div class="contact_container grid">
-				
-				<div class="contact_info">
-					<dl class="contact_list">
-						<dt>Phone: </dt>
-						<dd>+251 941915988</dd>
-						<dt>Email: </dt>
-						<dd>lilahseyfu@gmailcom</dd>
-					</dl>
-					<ul class="contact_socials">
-						<li><a href="#" class="href">Linkedin</a></li>
-						<li><a href="#" class="href">Twitter</a></li>
-					</ul>
-				</div>
-	
-				<div class="contact_form">
-					<form action="" class="form">
-						<div class="form_group">
-						  <input type="text" id="name" name="name" 
-						  placeholder="Your Name" required>
-						</div>
-						
-						<div class="form_group">
-						  <input type="email" id="email" name="email" placeholder="Your Email" required>
-						</div>
-						
-						<div class="form_group">
-						  <input type="text" id="subject" name="subject" placeholder="Subject" required>
-						</div>
-						
-						<div class="form_group">
-						  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-						</div>
-						
-						<button type="submit">Submit</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		</section>
-	</main>
+        <section class="contact">
+        <div class="contact_content container">
 
-	<footer>
-		<p>&copy; 2024 Khalid Sinteayehu. All rights reserved.</p>
-	</footer>
+            <h2 class="section_title">Drop me a line</h2>
+            <div class="contact_container grid">
+                
+                <div class="contact_info">
+                    <dl class="contact_list">
+                        <dt>Phone: </dt>
+                        <dd>+251 941915988</dd>
+                        <dt>Email: </dt>
+                        <dd>lilahseyfu@gmailcom</dd>
+                    </dl>
+                    <ul class="contact_socials">
+                        <a href="#" class="href"><img src="images/icon/github-142-svgrepo-com.svg"></a>
+                        <a href="#" class="href"><img src="images/icon/twitter-3-logo-svgrepo-com.svg"></a>
+                    </ul>
+                </div>
+    
+                <div class="form_container">
+                    <form action="action_page.php">
+                  
+                      
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      
+                      <input type="email" id="email" name="email" placeholder="Your Email">
+                  
+                      
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <div class="button_container">
+                        <input type="submit" value="Submit">
+                      </div>
+                  
+                    </form>
+                </div> 
+            </div>
+        </div>
+        </section>
+    </main>
 
-	<script src="index.js"></script>
+    <footer>
+        <p>&copy; 2024 Khalid Sinteayehu. All rights reserved.</p>
+    </footer>
+
+    <script src="src/index.js"></script>
 
 </body>
 </html>
