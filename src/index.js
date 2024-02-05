@@ -22,7 +22,7 @@ function myFunction() {
     icon.classList.add("ri-close-fill");
   } else {
     x.className = "navigation";
-    navLinks.style.display = "none";
+    navLinks.style.display = "flex";
     icon.classList.remove("ri-close-fill");
     icon.classList.add("ri-menu-2-fill");
   }
