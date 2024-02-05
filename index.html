@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Khalid - Portfolio</title>
+    <title>Khalid | Portfolio</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 
@@ -22,11 +22,10 @@
       </div>
 			<div class="navigation" id="navigation">      
           <div class="nav-link">
-              <a href="#" class="navlink"></a>
 			        <a href="#" class="navlink">Home</a>
-			        <a href="#" class="navlink">About</a>
-			        <a href="#" class="navlink">Projects</a>
-			        <a href="#" class="navlink">Contact</a>
+			        <a href="#about" class="navlink">About</a>
+			        <a href="#projects" class="navlink">Projects</a>
+			        <a href="#contact" class="navlink">Contact</a>
 			        <a href="#" class="navlink">Blog</a>
               <a href="src/cv.pdf" class="navlink btn">
                 <button >Download CV</button>
@@ -39,7 +38,8 @@
 
 
     <main>
-        <section id="hero">
+      <!--=========================== intro======================================-->
+        <section id="hero" id="about">
             <div class="hero-content">
                   <h1>
                     <span>H</span>
@@ -63,8 +63,61 @@
                 <img src="/hero.png" alt="img">
             </div>
         </section>
+        <!--===========================intro======================================-->
 
-        <section class="contact">
+
+        <!--===========================projects======================================-->
+        <section class="projects-container" id="projects">
+          <div class="project-wrap">
+            <div class="project1 project">
+              <img src="images/shell.png">
+              <a href="https://github.com/khalid1sey/simple_shell">
+                <h3>Simple Shell</h3>
+                <p>simple_shell is custom linux command line interpreter built 
+                  by khalid sinteayehu as alx team project </p>
+              </a>
+            </div>
+            <div class="project2 project">
+              <img src="">
+              <a>
+                <h3></h3>
+                <p></p>
+              </a>
+            </div>
+            <div class="project project3">
+              <img src="">
+              <a>
+                <h3></h3>
+                <p></p>
+              </a>
+            </div>;
+            <div class="project4 project">
+              <img src="">
+              <a>
+                <h3></h3>
+                <p></p>
+              </a>
+            <div class="project5 project">
+              <img src="">
+              <a>
+                <h3></h3>
+                <p></p>
+              </a>
+            </div>
+            <div class="project6">
+              <img src="">
+              <a>
+                <h3></h3>
+                <p></p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--===========================projects======================================-->
+
+
+        <!--===========================contact======================================-->
+        <section class="contact" id="contact">
         <div class="contact_content container">
 
             <h2 class="section_title">Drop me a line</h2>
@@ -104,6 +157,7 @@
             </div>
         </div>
         </section>
+        <!--===========================contact======================================-->
     </main>
 
     <footer>
