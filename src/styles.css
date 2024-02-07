@@ -45,6 +45,7 @@ div.navbar  {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(88, 52, 107, 0.2);
+  position: sticky;
 }
 
 /*=========logo=========*/
@@ -88,7 +89,7 @@ div.navbar div.logo-wrap h3 {
   }
   
   .navigation .nav-link a:hover {
-    background-color: white;
+    border-bottom: 5px solid rgb(35, 6, 51);
     color: black;
   }
 
@@ -97,7 +98,7 @@ div.navbar div.logo-wrap h3 {
     border-radius: 7px;
     padding: 10px;
     margin: 0 100px;
-    color: hsl(12,98%, 52%);
+    color:rgba(88, 52, 107, 0.6);
     font-weight: 600;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -123,12 +124,13 @@ div.navbar div.logo-wrap h3 {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 10px;
+    margin: 50px;
     
 }
 
 .hero-content {
   align-items: center;
+  padding: 30px 0;
   
 }
 
@@ -178,9 +180,10 @@ div.navbar div.logo-wrap h3 {
 }
 
 main div.hero-img {
-    flex: 0 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
     
 }
 
@@ -189,7 +192,7 @@ div.hero-img img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 30px 20px rgb(247, 255, 14);
+    box-shadow: 0 0 30px 20px rgb(27, 25, 14, 0.5);
 }
 
 .hero-content {
@@ -211,36 +214,39 @@ div.hero-img img {
   align-items: center;
   padding: 20px 10px;
   margin: 0 auto;
-  border: 5px solid blue;
 }
 
 .project-wrap div.project {
   width: 25rem;
-  height: auto;
-  background-color: #f8d50c;
+  height: auto; 
+  background-color: rgba(88, 52, 107, 0.6);
   border-radius: 1.5rem  ;
   margin: 5px;
-  padding: 1.5rem;
+  padding: 1.1rem;
   overflow: hidden;
   position: relative;
 }
 
-/* .project .img-holder {
-  width: 100%;
-  height: auto;
+.project .img-holder {
+  width: 100%;  
   position: relative;
-} */
-
-.project-wrap div.project:hover {
-  box-shadow: 5px 5px #aa52c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(88, 52, 107, 0.9);
 }
 
-div.project .img-holder img {
+.project-wrap .project:hover {
+  box-shadow: 3px 3px #b58dc1;
+  border: 5px solid rgba(88, 52, 107, 0.6);
+}
+
+.project img {
   border-radius: 1.5rem;
+  height: 15rem;
   width: 100%;
-  height: auto;
   max-width: 15rem;
- object-fit: cover;
+  object-fit: cover;
 }
 
 .project img::after {
@@ -249,24 +255,45 @@ div.project .img-holder img {
 }
 
 .project-wrap div.project div.project-details {
-  text-align: center;
-  background-color: rgb(157, 186, 10);
   height: auto;
-
+  color: #fff;
 }
 
 .project-wrap div.project div.project-details h3,p, button {
+
+
+}
+
+ div.project-details h3 {
+
+  padding: 1rem 0;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 5px;
+}
+
+.project span {
+  font-size: .8rem;
+}
+
+.project-details p {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.project-wrap .project .project-details .project-buttons {
+  display: flex;
 }
 
 .project-wrap .project .project-details button {
   border: none;
   padding: 10px;
   border-radius: 5px;
-  font-size: 600;
+  font-size: 15px;
+  font-weight: 550;
   margin: 0 auto;
-  background-color: #aa52c4;
+  background-color: #fff;
+  color: #2e1742;
+  text-align: center;
 }
 
 /*===================================================================================================================*/
@@ -278,6 +305,7 @@ div.project .img-holder img {
   border-radius: 5px;
   background-color: rgba(88, 52, 107, 0.2);
   padding: 20px;
+  margin: 100px;
   
 }
 .contact {
