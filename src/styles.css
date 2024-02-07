@@ -197,13 +197,50 @@ div.hero-img img {
 
 div.hero-img img:hover {
   filter: brightness(100%);
-  box-shadow: 0 0 30px 20px rgb(27, 25, 14, 0.2);
+  box-shadow: 0 0 30px 20px rgb(97, 84, 184);
 }
 
 .hero-content {
     flex: 1 1 auto;
 }
 /*==========================================================================*/
+
+
+/*========================================technologies===========================================================================*/
+.tech-container {
+  background-color: rgba(88, 52, 107, 0.2);
+  padding: 20px;
+  margin: 205px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.tech-container .tech-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 15px;
+  box-shadow: 1px 1px #2e1742;
+  border-bottom: 2px solid #b58dc1;
+}
+
+.tech-container .tech {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between
+}
+
+.tech-container .tech span{
+  
+}
+
+.tech-container .tech progress {
+  border-radius: 15px;
+  background-color: rgba(39, 27, 45, 0.2);
+  color: rgba(39, 27, 45, 0.2);;
+  width: 300px;
+}
+
+/*======================================================================= ========================*/
 
 
 /*========================================== projects ==========================================================================*/
@@ -459,7 +496,8 @@ footer p {
   div.navbar div.logo-wrap h3 {
     margin: 2px 5px;
     padding: 2px 5px;
-  }
+
+ }
 
     .navigation a:not(:first-child) {
       display: none;}
