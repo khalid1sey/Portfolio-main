@@ -10,8 +10,12 @@
 2.1.1.1 svg graphics
 2.1.1.2 animations
 2.1.2 introduction
+
 2.2 section
-2.2.1 form
+2.2.1 projects
+
+2.3 section
+2.3.1 form
 
 3 footer
 3.1 desclaimer

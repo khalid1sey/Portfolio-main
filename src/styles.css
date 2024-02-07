@@ -36,7 +36,8 @@ ul, ol {
 }
 /*=====================================================*/
 .navbr {
-  
+  position: sticky !important;
+  top: 0;
 }
 
 div.navbar  {
@@ -45,7 +46,7 @@ div.navbar  {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(88, 52, 107, 0.2);
-  position: sticky;
+
 }
 
 /*=========logo=========*/
@@ -53,10 +54,6 @@ div.navbar  {
 #logo {
   font-size: xx-large;
   font-weight: 700;
-}
-
-.logo-wrap {
-
 }
 
 .logo-wrap a .icon {
@@ -75,6 +72,7 @@ div.navbar div.logo-wrap h3 {
 
 .navigation {
   overflow: auto;
+  overflow: hidden;
 }
 
 .navigation div.nav-link {
@@ -83,7 +81,7 @@ div.navbar div.logo-wrap h3 {
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;      
-    gap: 10px;
+    gap: 25px;
     font-size: 20px;
     margin: 20px;
   }
@@ -97,7 +95,7 @@ div.navbar div.logo-wrap h3 {
     border: none;
     border-radius: 7px;
     padding: 10px;
-    margin: 0 100px;
+    margin-top: -100px;
     color:rgba(88, 52, 107, 0.6);
     font-weight: 600;
     text-transform: uppercase;
@@ -142,6 +140,7 @@ div.navbar div.logo-wrap h3 {
     text-shadow: 0 5px 15px rgba(0,0,0,0.3);
     border-top: none ;
     border-right: none;
+    margin: 20px;
 }
 
 .hero-content h1 span {
@@ -193,6 +192,12 @@ div.hero-img img {
     width: 300px;
     border-radius: 50%;
     box-shadow: 0 0 30px 20px rgb(27, 25, 14, 0.5);
+    filter: brightness(90%);
+}
+
+div.hero-img img:hover {
+  filter: brightness(100%);
+  box-shadow: 0 0 30px 20px rgb(27, 25, 14, 0.2);
 }
 
 .hero-content {
@@ -203,7 +208,22 @@ div.hero-img img {
 
 /*========================================== projects ==========================================================================*/
 .projects-container {
+  background-color: rgba(88, 52, 107, 0.3);
+  padding: 10px;
+  margin: 100px 0;
+}
 
+.projects-container .discription{
+  margin: 30px;
+  text-align: center;
+}
+
+.projects-container .discription span {
+  font-family: monospace;
+  text-transform: uppercase; 
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .projects-container .project-wrap {
@@ -257,6 +277,7 @@ div.hero-img img {
 .project-wrap div.project div.project-details {
   height: auto;
   color: #fff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .project-wrap div.project div.project-details h3,p, button {
@@ -277,7 +298,7 @@ div.hero-img img {
 
 .project-details p {
   padding: 1rem 0;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .project-wrap .project .project-details .project-buttons {
@@ -289,11 +310,13 @@ div.hero-img img {
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 550;
   margin: 0 auto;
   background-color: #fff;
   color: #2e1742;
   text-align: center;
+  cursor: pointer;
 }
 
 /*===================================================================================================================*/
@@ -317,8 +340,8 @@ div.hero-img img {
 .contact_content {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .section_title {
@@ -342,7 +365,7 @@ div.hero-img img {
   flex-basis: 40%;  /* Take 40% of the available width */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .contact_info dl {
@@ -464,8 +487,7 @@ footer p {
 
   .navigation.responsive {
     display: block;
-    background-color: hsl(12,98%, 52%);
-
+    background-color: rgba(88, 52, 107, 0.9);
   }
 
   .navigation.responsive .nav-link a{
@@ -486,7 +508,7 @@ footer p {
     border: none;
     border-radius: 7px;
     padding: 10px;
-    margin: 0 100px;
+    margin: 0 200px;
     color: hsl(12,98%, 52%);
     font-weight: 600;
     text-transform: uppercase;
