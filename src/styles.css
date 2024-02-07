@@ -571,15 +571,20 @@ footer p {
 
 }
 
-@media screen and (max-width: 760px){
-  .contact_container {
-    display: block;
-  }
-
-  .form_container input, textarea {
-    width: 70%;
+@media screen and (max-width: 580px){
+ 
+  .tech-container .tech progress {
+    width: 150px;
   }
 }
+
+@media screen and (max-width: 440px){
+ 
+  .tech-container .tech progress {
+    width: 80px;
+  }
+}
+
 
 
 
@@ -597,6 +602,13 @@ footer p {
 
 @media screen and (max-width: 760px) {
 
+  .contact_container {
+    display: block;
+  }
+
+  .form_container input, textarea {
+    width: 70%;
+  }
 
   .contact_info,
   .form_container {
