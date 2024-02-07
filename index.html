@@ -234,19 +234,19 @@
                 </div>
     
                 <div class="form_container">
-                    <form action="action_page.php">
+                    <form class="contact-form" method="post" action="send_email.php">
                   
                       
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="name" name="firstname" placeholder="Your name..">
                   
                       
                       <input type="email" id="email" name="email" placeholder="Your Email">
                   
                       
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                   
                       <div class="button_container">
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit">
                       </div>
                   
                     </form>
@@ -262,6 +262,7 @@
     </footer>
 
     <script src="src/index.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 
 </body>
 </html>
