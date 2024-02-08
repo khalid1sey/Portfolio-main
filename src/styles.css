@@ -85,17 +85,20 @@ div.navbar div.logo-wrap h3 {
     font-size: 20px;
     margin: 20px;
   }
+
+  .navigation div.nav-link:first-child(1) {
+    display: none;
+  }
   
   .navigation .nav-link a:hover {
     border-bottom: 5px solid rgb(35, 6, 51);
     color: black;
   }
 
-  .navigation .nav-link a button{
+  .navigation .nav-link button{
     border: none;
     border-radius: 7px;
     padding: 10px;
-    margin-top: -100px;
     color:rgba(88, 52, 107, 0.6);
     font-weight: 600;
     text-transform: uppercase;
@@ -113,7 +116,7 @@ div.navbar div.logo-wrap h3 {
 
 /*========================================== main ==========================================================================*/
 /*========================================== hero ==========================================================================*/
-#hero {
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,13 +426,26 @@ div.hero-img img:hover {
 }
 
 .contact_list dd {
-  padding-left: 2.25em;
+  padding-left:5em;
   margin-bottom: 0.94em;
+}
+
+.contact_socials a {
+  display: block;
+  padding: 5px 0;
+}
+
+.contact_socials a:hover {
+  background-color: #b58dc1;
+  border-radius: 30%;
+  border: 2px solid rgb(70, 53, 196);
 }
 
 .contact_socials img {
   width: 36px;
   height: 36px;
+  margin: 2px;
+  
 }
 
 .form_container {
@@ -549,11 +565,11 @@ footer p {
     background-color: rgba(115, 41, 152, 0.1)
   }
 
-  .navigation .nav-link a button{
+  .responsive .nav-link button{
     border: none;
     border-radius: 7px;
     padding: 10px;
-    margin: 0 50px;
+    margin: 0 50px; 
     color: hsl(12,98%, 52%);
     font-weight: 600;
     text-transform: uppercase;
@@ -561,12 +577,13 @@ footer p {
     font-size: 10px;
     background-color: white;
   }
+
   
   #ham-menu {
     font-size: 30px;
   }
 
-  #hero {
+  .hero {
       display: block;
       align-items: center;
       justify-content: center;
@@ -611,6 +628,9 @@ footer p {
 
 @media screen and (max-width: 760px) {
 
+
+
+
   .contact_container {
     display: block;
   }
@@ -623,4 +643,14 @@ footer p {
   .form_container {
     flex-basis: 100%;  /* Take full width on smaller screens */
   }
+}
+
+@media screen and (max-width: 760px) and (min-width: 525px) {
+  .contact_socials {
+    display: flex;
+    }
+
+    .contact_socials a {
+      padding: 0 5px;
+    }
 }

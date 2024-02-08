@@ -1,4 +1,4 @@
-/**
+/*
  * menu
  */
 function myFunction() {
@@ -19,7 +19,17 @@ function myFunction() {
   }
 }
 
-/**
+
+document.getElementById("git-link").addEventListener("click", function() {
+  window.location.href = "https://github.com/khalid1sey/simple_shell";
+});
+
+document.getElementById("demo").addEventListener("click", function() {
+  window.location.href = "https://example.com/demo";
+});
+
+
+/*
  * form submit
  */
 
