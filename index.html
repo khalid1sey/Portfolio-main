@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
   <header>
-
     <!--===========================nav menu======================================-->
 		<div class="navbar">
       <div class="logo-wrap">
@@ -21,24 +19,26 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="ri-menu-2-fill" id="ham-menu"></i></a>
       </div>
 			<div class="navigation" id="navigation">      
-          <div class="nav-link">
-            <a href="#" class="navlink"></a>
-			        <a href="#" class="navlink">Home</a>
-			        <a href="#about" class="navlink">About</a>
-			        <a href="#projects" class="navlink">Projects</a>
-			        <a href="#contact" class="navlink">Contact</a>
-			        <a href="#" class="navlink">Blog</a>
-              <button >Download CV</button>
-
-          </div>  
-        </div>
+        <div class="nav-link">
+          <a href="#" class="navlink"></a>
+          <a href="#" class="navlink">Home</a>
+          <a href="#about" class="navlink">About</a>
+          <a href="#projects" class="navlink">Projects</a>
+          <a href="#contact" class="navlink">Contact</a>
+          <a href="#" class="navlink">Blog</a>
+          <button >Download CV</button>
+        </div>  
+      </div>
 		</div>
-        <!--===========================nav menu======================================-->
 	</header>
+<!--===========================nav menu======================================-->
 
 
-    <main>
-      <!--=========================== intro======================================-->
+
+  <div id="particles-js"> </div>
+    <div class="cont">
+      <main>
+<!--=========================== intro======================================-->
         <section id="about" class="hero">
             <div class="hero-content">
                   <h1>
@@ -69,7 +69,7 @@
 
 
         <!--===========================Technologies======================================-->
-          <section class="tech-container">
+        <section class="tech-container">
             <div class="tech-title">
               Technologies
             </div>
@@ -106,7 +106,7 @@
               <progress max="100" value="95"></progress>
             </div>
 
-          </section>
+        </section>
 
         <!--===========================Technologies======================================-->
 
@@ -213,12 +213,11 @@
 
         <!--===========================contact======================================-->
         <section class="contact" id="contact">
-        <div class="contact_content container">
-
+          <div class="contact_content container">
             <h2 class="section_title">Drop me a line</h2>
             <div class="contact_container grid">
                 
-                <div class="contact_info">
+              <div class="contact_info">
                     <dl class="contact_list">
                         <dt>Phone: </dt>
                         <dd>+251 941915988</dd>
@@ -233,38 +232,33 @@
                         <a href="#" class="href"><img src="images/icon/telegram-logo-svgrepo-com.svg"></a>
                         <a href="#" class="href"><img src="images/icon/linkedin-icon-logo-svgrepo-com.svg"></a>
                     </ul>
-                </div>
+              </div>
     
-                <div class="form_container">
-                    <form class="contact-form" method="post" action="send_email.php">
-                  
-                      
-                      <input type="text" id="name" name="firstname" placeholder="Your name..">
-                  
-                      
-                      <input type="email" id="email" name="email" placeholder="Your Email">
-                  
-                      
-                      <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  
-                      <div class="button_container">
-                        <input type="submit" value="Submit" id="submit">
-                      </div>
-                  
-                    </form>
-                </div> 
+              <div class="form_container">
+                  <form class="contact-form" method="post" action="send_email.php">
+                    <input type="text" id="name" name="firstname" placeholder="Your name..">  
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <div class="button_container">
+                    <input type="submit" value="Submit" id="submit">
+                  </form>
+              </div> 
             </div>
-        </div>
+          </div>
         </section>
         <!--===========================contact======================================-->
     </main>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 Khalid Sinteayehu. All rights reserved.</p>
-    </footer>
 
-    <script src="src/index.js"></script>
-    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 
+  <footer>
+    <p>&copy; 2024 Khalid Sinteayehu. All rights reserved.</p>
+  </footer>
+
+  <script src="src/index.js"></script>
+  <script src="src/particles.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 </body>
 </html>

@@ -2,28 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 0;
-  border: 0;
 }
 
 body {
-  background-color: #2e1742;
+  background-color: rgba(84, 38, 108);
   color: #fff;
+  overflow-x: hidden;
+
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(white 1px, transparent 0),
-                    radial-gradient(white 1px, transparent 0);
-  background-position: 0 0, 50px 50px;
-  background-size: 100px 100px;
-  z-index: -1;
-}
 
 /*=============predefined elements================*/
 html body a {
@@ -45,7 +32,7 @@ div.navbar  {
   justify-content: space-between;
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
-  background-color: rgba(88, 52, 107, 0.2);
+  background-color: rgba(88, 52, 107, 0.9);
 
 }
 
@@ -113,6 +100,21 @@ div.navbar div.logo-wrap h3 {
   }
 /*====================================================================================*/
 
+
+#particles-js {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: rgba(59, 41, 174, 0.113);
+  position: fixed;
+}
+
+div.cont {
+  position: relative;
+}
 
 /*========================================== main ==========================================================================*/
 /*========================================== hero ==========================================================================*/
@@ -372,7 +374,7 @@ div.hero-img img:hover {
 
 .container {
   border-radius: 5px;
-  background-color: rgba(88, 52, 107, 0.2);
+  background-color: rgba(88, 52, 107, 0.9);
   padding: 20px;
   margin: 100px;
   
