@@ -20,11 +20,38 @@ function myFunction() {
 }
 
 
-document.getElementById("git-link").addEventListener("click", function() {
-  window.location.href = "https://github.com/khalid1sey/simple_shell";
-});
+// document.getElementById("git-link").addEventListener("click", function() {
+//   window.location.href = "https://github.com/khalid1sey/simple_shell";
+// });
 
-document.getElementById("demo").addEventListener("click", function() {
-  window.location.href = "https://example.com/demo";
-});
+// document.getElementById("demo").addEventListener("click", function() {
+//   window.location.href = "https://example.com/demo";
+// });
 
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+const toggleElement = document.querySelector('.mode');
+const bodyElement = document.body;
+
+toggleElement.addEventListener('click', () => {
+  bodyElement.classList.toggle('dark-mode'); // Toggle 'dark-mode' class on body
+});
