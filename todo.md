@@ -16,7 +16,7 @@ projects section
     make a collage of photos of the project and put it as cover for the card
 
 animation for home or landing page
-    like scroll delay
+    like scroll delay________________depreciated
     drop components animation
 about section
     add experiance

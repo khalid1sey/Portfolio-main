@@ -31,7 +31,6 @@ div.navbar  {
   border-radius: 10px;
   background-color: rgba(39, 27, 45, 0.1);
   margin-bottom: 5px;
-  box-shadow: 4px 4px rgba(255, 255, 255, 0.9);
 }
 
 /*=========logo=========*/
@@ -41,7 +40,6 @@ div.navbar  {
   font-family: monospace;
   position: absolute;
   top: 1%;
-  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 10px;
   padding: 0;
 }
@@ -49,15 +47,18 @@ div.navbar  {
   display: none;
 }
 .logo-wrap h3 {
-  margin: 10px 25px;
+  margin: 10px 5px;
 }
 .logo-wrap h3 span {
   color: #f50909;
 }
+.logo-wrap i img {
+  width: 30px;
+}
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -66,49 +67,26 @@ div.navbar  {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 5px;
   font-size: 18px;   
   font-weight: 550;   
   gap: 25px;
   margin:0 50px;
-  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 10px;
-  box-shadow: 1px 2px rgba(255, 38, 0, 0.1);
 }
 .navigation .nav-link a:hover {
   border-bottom: 2px solid rgb(246, 6, 6 );
-}
-.navigation button{
-  margin: 10px;
-  border-radius: 10px;
-  padding: 5px;
-  color:rgba(0, 0, 0, 0.868);
-  border: 1px solid rgba(0,0,0,0.2);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80px;
-  box-shadow: 6px 2px rgba(220, 49, 18, 0.3);
-}
-.navigation button:hover {
-  color: black;
-}
-button img {
-  width: 25px;
-
 }
 .mode {
   border-radius: 50%;
   cursor: pointer;
   width: 30px;
   height: 30px;
-  margin: 10px;
-  background-color: white;
+  position: absolute;
+  left: 35%;
+}
+.mode img {
+  width: 30px;
 }
 .dark {
   display: none;
@@ -122,6 +100,14 @@ button img {
 }
 .dark-mode .dark {
   display: block;
+}
+
+.dark-mode .navbar .icon {
+  color: white;
+}
+.dark-mode .navbar .icon i img {
+      background-color: #fff;
+      border-radius: 10px;
 }
 /*====================================================================================*/
 
@@ -206,6 +192,38 @@ div.hero-img img:hover {
   width: 36px;
   height: 36px;
   margin: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1px;
+}
+.hero .hero-img button{
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  color:rgba(0, 0, 0, 0.868);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.hero .hero-img button a{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero .hero-img button:hover {
+  color: black;
+}
+.hero-img button img {
+  height: 36px;
+  width: 36px;
 }
 
 /*==========================================================================*/
@@ -307,12 +325,6 @@ section.about-container {
   width: 30%;
 }
 
-@media only screen and(max-width: 768px) {
-  .about-container {
-    display: grid;
-  }
-}
-
 /*========================================== projects ==========================================================================*/
 .projects-container {
   padding: 5px;
@@ -409,7 +421,6 @@ section.about-container {
   width: 100%;
   max-width: 15rem;
   object-fit: cover;
-  vertical-align: center;
 }
 .project img::after {
   content: '';
@@ -564,79 +575,170 @@ section.about-container {
     justify-content: center;
   }
 /*=========================================================================*/
-
-
 /*==================== footer ==========*/
 footer p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     margin-top: 50px;
     text-align: center;
-    background-color: rgba(109, 36, 145, 0.1);
     padding: 10px;
 }
 /*========================================================================================*/
+/*{% comment %}.center {
+   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 9999;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+@keyframes wave {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+} {% endcomment %}
+*/
 
+/*===========q========================= responsive for mobile ===========  ==================*/
+@media screen and (max-width: 485px) {
+  .contact_socials {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 138%;
+  margin: 1px;
+  }
+  .hero-img button {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
 
-/*==================================== responsive for mobile ===========  ==================*/
-@media screen and (max-width: 720px) and (max-width: 730px) {
-
-  /*_______
-    NAVBAR
-    ______*/
-
+}
+@media screen and (max-width: 668px) {
   div.navbar {
     display: block;
+    border: none;
   }
-
-  div.navbar div.logo-wrap h3 {
-    margin: 2px 5px;
-    padding: 2px 5px;
-
-  }
-
-    .navigation a:not(:first-child) {
+  .navigation a:not(:first-child) {
       display: none;}
-
     .logo-wrap {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin: 0 10px;
-      height: 1px;
     }
-
     .logo-wrap a.icon {
-    float: right;
-    display: block;
-    justify-content: space-between;
-    background-color: rgb(237, 82, 47);
     border-radius: 5px;
-    color: white;
-    padding: 13px;
+    color: #000;
+    padding: 13px;  
+    z-index: 100;  
   }
-
-  .logo-wrap a {
+  .logo-wrap a.icon  i img {
+    width: 36px;
+    color: #fff;
+  }
+    div.navbar div.logo-wrap h3 {
+    margin: 2px 5px;
+    padding: 2px 5px;
+  }
     
+  .logo-wrap a {  
   }
-
-  .navigation.responsive {
+  .logo-wrap .mode {
+    position: relative;
+    left: 65%;
+  }
+  .responsive {
     display: block;
-    background-color: rgb(225, 71, 25);
+    background-color: rgba(0, 0, 0, 0.588);
+    border-radius: 5px;
+    position: fixed;
+    width: 180px;
+    right: 0;
+    z-index: 100;
+  }
+  .nav-link {
+    box-shadow: none;
+    height: 100%;
   }
 
-  .navigation.responsive .nav-link a{
+  .responsive .nav-link a{
     display: flex;
     flex-direction: column;
     text-align: center;
     color: white;
     width: 100%;
-    height: 10vh;
+    margin: 20px 0;
     border: none;
   }
 
   .navigation.responsive .nav-link a:hover {
-    color: black;
-    background-color: rgba(115, 41, 152, 0.1)
+    color: tomato;
+    border-bottom: 2px solid rgba(115, 41, 152, 0.1)
+
   }
 
   .navigation button{
@@ -673,6 +775,13 @@ footer p {
       gap: 20px;
       margin: 0;
   }
+   .contact_socials {
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
 
 }
 
@@ -698,12 +807,7 @@ footer p {
 
 
 /*==================== responsive for mobile ==========*/
-@media screen and (min-width: 650px) {
-
-.hero-img {
-      width: 50%;
-    }
-
+@media screen and (min-width: 660px) {
   .logo-wrap a.icon {
     visibility: hidden;
   }
@@ -729,9 +833,6 @@ footer p {
 }
 
 @media screen and (max-width: 760px) and (min-width: 525px) {
-  .contact_socials {
-    display: flex;
-    }
 
     .contact_socials a {
       padding: 0 5px;
