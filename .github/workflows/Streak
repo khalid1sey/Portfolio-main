@@ -1,0 +1,26 @@
+name: 10 Commits Daily
+on:
+  schedule:
+    - cron: "0 12 * * *" # Runs once a day at 12:00 PM UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  multi-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform 10 commits
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          for i in {1..10}
+          do
+            echo "Commit #$i on $(date)" >> streak-log.txt
+            git add streak-log.txt
+            git commit -m "Automated commit $i of 10 for $(date +%Y-%m-%d)"
+          done
+          
+          git push
